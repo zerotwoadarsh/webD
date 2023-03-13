@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alingment-Float</title>
+    <style>
+        body{
+            background-color: rgb(174, 241, 112);
+        }
+        .container{
+            border: 10px solid green;
+            margin: auto auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .item{
+            border:15px solid rgba(255, 202, 161, 0.817);
+            margin: 10px 4px;
+            padding: 8px 4px;
+            background-color: rgba(32, 128, 212, 0.418);
+        }
+        #fruit{
+            float: left;
+            width: 45%;
+        }
+        #COMPUTER{
+            float: right;
+            width: 45%;   
+        }
+        #MOBILE{
+            clear: both;
+            width: 95.%;
+        }
+        p.para1{
+            text-align: center;
+        }
+        p.para2{
+            text-align:right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+        <h3>FRUITS</h3>    
+            <p id="fruitspara" class="para1">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cupiditate sed unde doloremque illum. Provident expedita non rem voluptate? Ratione laudantium tempore minima, tempora aperiam nulla a dolorum iste earum!
+            </p>
+        </div>
+        <div id="COMPUTER" class="item">
+        <h3>COMPUTER</h3>    
+            <p id="para" class="para2">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cupiditate sed unde doloremque illum. Provident expedita non rem voluptate? Ratione laudantium tempore minima, tempora aperiam nulla a dolorum iste earum!
+            </p>
+        </div>
+        <div id="MOBILE" class="item">
+        <h3>MOBILE</h3>    
+            <p id="mobilepara" class="para">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cupiditate sed unde doloremque illum. Provident expedita non rem voluptate? Ratione laudantium tempore minima, tempora aperiam nulla a dolorum iste earum!  
+            </p>
+        </div>
+    </div>
+</body>
+</html>
