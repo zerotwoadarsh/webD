@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vibility and z-index</title>
+    <style>
+        .container {
+            border: 10px solid hotpink;
+            display: inline-block;
+            width: 95%;
+            margin: 19px auto;
+            background-color: rgb(209, 175, 250);
+            font-size: 30px;
+            text-align: center;
+            color: rgb(202, 21, 21);
+            justify-content: center;
+        }
+
+        .box {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 5px solid brown;
+            margin: 10px;
+text-align: center;
+        }
+
+        #box1 {
+            /* the element with lower zindex is below */
+            position: relative;
+            /* z-index: -2; */
+            background-color: bisque;
+        }
+
+        #box2 {position: relative;
+            z-index: 2;
+           /* BY USING THE VISIBILITY WE RESERVE THE POSTION OF THE ELEMENT  */
+           /* visibility: hidden; */
+           /* BY USING THE DISPLAY NONE WE DO NOT RESERVE THE POSTION OF THE ELEMENT  */
+            /* display: none; */
+            background-color: blanchedalmond;
+        }
+
+        #box3 {
+            background-color: rgb(183, 213, 240);
+        }
+
+        #box4 {
+            background-color: rgb(220, 192, 150);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
