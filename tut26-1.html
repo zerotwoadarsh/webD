@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX TUTORIAL</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 100%;
+            border: 5px solid brown;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex container for flex container */
+            /* flex-direction: row;  flex direction is by default row */
+            /* flex-direction: column; */
+            flex-direction: row-reverse;
+            /* to start filling the flex container from right direction */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-between; */
+            align-items: center;
+            align-items: stretch;
+        }
+        
+        .item {
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            border: 5px solid rgb(231, 47, 255);
+            margin: 10px;
+            padding: 5px;
+        }
+        
+        #item1 {
+            /* the item with higher order will be placed later */
+            order: 2;
+            flex-grow: 1;
+        }
+        
+        #item2 {
+            order: 3;
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- FLEXBOX IS A ONE-DIMENSIONAL LAYOUT METHOD FOR LAYING OUT ITEM IN ROWS OR COLUMNS. -->
+    <!-- css FLEXBOX IS A BETTER WAY TO ALING ITEMS INTO A CONTAINER. -->
+    <h1>This is FLEXBOX Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second paras box</div>
+        <div class="item" id="item3">third box</div>
+        <!-- <div class="item" id="item4">fourth box</div> -->
+        <!-- <div class="item" id="item5">fifth box</div> -->
+        <!-- <div class="item" id="item6">sixth box</div> -->
+    </div>
+</body>
+
+</html>
